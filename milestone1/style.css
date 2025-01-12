@@ -1,0 +1,104 @@
+/* General styling */
+body {
+    font-family: "sans-serif";
+    background-color: #f9fafb; /* Light background to balance strong colors */
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: #ffffff; /* White background for main container */
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    overflow: hidden;
+}
+
+/* Left section styling */
+.left-section {
+    background: linear-gradient(135deg, #003366, #0a192f); /* Navy blue gradient */
+    color: #facc15; /* Yellow text for contrast */
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #facc15; /* Yellow accent border */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2); /* Soft inner shadow for depth */
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #facc15; /* Yellow border for the profile image */
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Soft shadow for profile picture */
+}
+
+h1 {
+    font-size: 26px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+}
+
+h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 20px 0 10px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2); /* Dark semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light text shadow */
+}
+
+ul {
+    list-style-type: square;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #333; /* Dark gray text for items */
+    font-size: 16px;
+}
+
+/* Right section styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    background: linear-gradient(135deg, #f9fafb, #e0e7ff); /* Soft blue gradient for the right section */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Light inset shadow for depth */
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Button shadow for 3D effect */
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #facc15; /* Yellow button for vibrant contrast */
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #eab308; /* Slightly darker yellow on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(250, 194, 21, 0.4); /* Focus shadow with yellow glow */
+}
