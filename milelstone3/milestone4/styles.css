@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form {
+    display: grid;
+    gap: 20px;
+}
+
+.section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resume-container {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-header h3 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.resume-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resume-section ul li {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resume-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Added styles for editable content */
+[contenteditable="true"] {
+    border: 1px dashed #4CAF50;
+    padding: 5px;
+    min-height: 30px;
+}
+
+[contenteditable="true"]:empty:before {
+    content: "Click to edit...";
+    color: #888;
+    font-style: italic;
+}
